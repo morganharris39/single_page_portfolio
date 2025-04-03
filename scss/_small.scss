@@ -19,20 +19,6 @@ body {
     min-width: 320px;
 }
 
-
-/* --------------------------- HEADER --------------------------- */
-header {
-    display: grid;
-    grid-template-columns: 50px auto;
-    column-gap: $gutter;
-    align-items: center; //vertically
-    padding: .5rem $gutter;
-    span {
-        font-size: 1.6rem;
-    }
-} // end header
-
-
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 
 #navWrapper {
@@ -64,7 +50,8 @@ nav {
             text-decoration: none;
 
             img {
-                width: 25px;
+                width: 27px;
+                color: white;
             }
 
             span {
@@ -80,19 +67,101 @@ nav {
 
 /* --------------------------- MAIN --------------------------- */
 main {
-    h1, h2 {
-        padding: 1rem $gutter.5rem $gutter;
-        font-size: 1.5rem;
-    }
-    p {
-        padding: .5rem $gutter;
-        color: #333;
-        line-height: $leading;
-    }
-}// end main
 
-.page-sections {
-    height: 100vh;
+    .page-sections {
+        height: 100vh;
+        display: flex; 
+        flex-direction: column; 
+    }
+    
+    #about {
+        background-color: $aboutBackground;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        h1 {
+            font-size: 48px;
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+        
+    }
+    
+    #education {
+        background-color: $educationBackground;
+    }
+    
+    #languages {
+        background-color: $skillsBackground;
+
+        div {
+
+            img {
+                display: block;
+                width: 90%;
+                height: auto;
+                padding: 1rem 0;
+            }
+        }
+
+        div, img {
+            margin: 0 auto;
+        }
+    }
+    
+    #projects {
+        background-color: $projectsBackground;
+        
+        div {
+
+            div {
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+    #contact {
+        background-color: $contactBackground;
+        margin: 0 auto;
+
+        form {
+            margin: 0 auto;
+
+            label {
+                display: block;
+            }
+
+            input[type=text],
+            input[type=email],
+            select {
+                display: block;
+                margin: 0.1rem 0 1rem 0;
+                width: 300px;
+                padding: 0.5rem $gutter;
+            }
+
+            textarea {  // Add this new block
+                display: block;
+                margin: 0.1rem 0 1rem 0;
+                width: 300px;
+                height: 150px;  // Adjust this value to make it taller
+                padding: 0.5rem $gutter;
+            }
+            
+        }
+    }
 }
 
 /* --------------------------- FOOTER --------------------------- */

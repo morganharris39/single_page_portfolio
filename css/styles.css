@@ -318,22 +318,9 @@ body {
   min-width: 320px;
 }
 
-/* --------------------------- HEADER --------------------------- */
-header {
-  display: grid;
-  grid-template-columns: 50px auto;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  align-items: center;
-  padding: 0.5rem 10px;
-}
-header span {
-  font-size: 1.6rem;
-}
-
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 #navWrapper {
-  background-color: green;
+  background-color: #161516;
   position: sticky;
   top: 0;
 }
@@ -348,7 +335,7 @@ nav ul li {
   flex: 1;
 }
 nav ul li.active {
-  background-color: #004d00;
+  background-color: black;
 }
 nav ul a {
   display: block;
@@ -358,28 +345,85 @@ nav ul a {
   text-decoration: none;
 }
 nav ul a img {
-  width: 25px;
+  width: 27px;
+  color: white;
 }
 nav ul a span {
   display: none;
 }
 nav ul a:hover {
-  background-color: #00b300;
+  background-color: #302e30;
 }
 
 /* --------------------------- MAIN --------------------------- */
-main h1, main h2 {
-  padding: 1rem 10px 0.5rem 10px;
-  font-size: 1.5rem;
-}
-main p {
-  padding: 0.5rem 10px;
-  color: #333;
-  line-height: 150%;
-}
-
-.page-sections {
+main .page-sections {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main #about {
+  background-color: #B73B84;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+main #about h1 {
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
+}
+main #about p {
+  font-size: 20px;
+}
+main #education {
+  background-color: #DC5662;
+}
+main #languages {
+  background-color: #FF9341;
+}
+main #languages div img {
+  display: block;
+  width: 90%;
+  height: auto;
+  padding: 1rem 0;
+}
+main #languages div, main #languages img {
+  margin: 0 auto;
+}
+main #projects {
+  background-color: #F4CB6A;
+}
+main #projects div div img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+main #contact {
+  background-color: #C7E197;
+  margin: 0 auto;
+}
+main #contact form {
+  margin: 0 auto;
+}
+main #contact form label {
+  display: block;
+}
+main #contact form input[type=text],
+main #contact form input[type=email],
+main #contact form select {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  width: 300px;
+  padding: 0.5rem 10px;
+}
+main #contact form textarea {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  width: 300px;
+  height: 150px;
+  padding: 0.5rem 10px;
 }
 
 /* --------------------------- FOOTER --------------------------- */

@@ -15,23 +15,15 @@
 </head>
 
 <body>
-<div id="headerWrapper">
-	<header>
-        <img src="images/logo1x.png" alt="logo">
-		<span>Design Thinking</span>
-	</header>
-</div><!-- end header wrapper -->
 
-    
-    
 <div id="navWrapper">
     <nav>
         <ul>
-            <li class="active"><a href="#about"><img src="#"><span>About</span></a></li>
-            <li><a href="#education"><img src="#"><span>Education</span></a></li>
-            <li><a href="#skills"><img src="#"><span>Skills</span></a></li>
-            <li><a href="#projects"><img src="#"><span>Projects</span></a></li>
-            <li><a href="#contact"><img src="#"><span>Contact</span></a></li>
+            <li class="active"><a href="#about"><img src="images/user-circle-bold.svg" alt="about icon" width="50" height="50"><span>About</span></a></li>
+            <li><a href="#education"><img src="images/books-bold.svg" alt="books icon" width="50" height="50"><span>Education</span></a></li>
+            <li><a href="#languages"><img src="images/code-bold.svg" alt="code brackets icon" width="50" height="50"><span>Languages</span></a></li>
+            <li><a href="#projects"><img src="images/browser-bold.svg" alt="browser icon" width="50" height="50"><span>Projects</span></a></li>
+            <li><a href="#contact"><img src="images/chat-teardrop-bold.svg" alt="chat bubble icon" width="50" height="50"><span>Contact</span></a></li>
         </ul>
     </nav>
 </div> <!-- end nav wrapper -->
@@ -40,23 +32,51 @@
     <main>
 
         <section id="about" class="page-sections">
-            <h1>About</h1>
+            <h1>Morgan Harris</h1>
+            <p>Front-End Development Student</p>
         </section>
 
         <section id="education" class="page-sections">
             <h2>Education</h2>
+            <p>Current Utah Valley University Student</p>
+            <p>Junior</p>
         </section>
 
-        <section id="skills" class="page-sections">
-            <h2>Skills</h2>
+        <section id="languages" class="page-sections">
+            <h2>Languages</h2>
+            <div>
+                <img src="images/html.png" alt="html logo" width="250" height="281">
+                <img src="images/css.png" alt="css logo" width="250" height="278">
+                <img src="images/javascript.png" alt="javascript logo" width="250" height="281">
+            </div>
         </section>
 
         <section id="projects" class="page-sections">
             <h2>Projects</h2>
+            <div>
+                <div>
+                    <img src="images/x-mobile-image.webp" alt="site about different fake models of phones" width="400" height="500">
+                    <a href="https://morganharris39.github.io/x-mobile/" target="_blank">View Project</a>
+                </div>
+                <div>
+                    <img src="images/conference-image.webp" alt="site about a fake sustainable tech conference" width="400" height="500">
+                    <a href="https://morganharris39.github.io/technology_conference/" target="_blank">View Project</a>
+                </div>
+                <div>
+                    <img src="images/hotel-chain-image.webp" alt="site about different hobbit-themed hotels" width="400" height="500">
+                    <a href="https://morganharris39.github.io/hotel_chain/" target="_blank">View Project</a>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="page-sections">
             <h2>Contact</h2>
+            <form>
+                <label>Name <input type="text" name="name" autocomplete="given-name" required title="Enter your name"></label>
+                <label>Email <input type="email" name="email" autocomplete="email" required title="Enter your email"></label>
+                <label for="message">Message</label>
+                <textarea name="message" rows="5" cols="33"></textarea>
+            </form>
         </section>
 
     </main>
