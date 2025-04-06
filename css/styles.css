@@ -357,12 +357,12 @@ nav ul a:hover {
 
 /* --------------------------- MAIN --------------------------- */
 main .page-sections {
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 main #about {
   background-color: #B73B84;
+  height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -379,6 +379,23 @@ main #about p {
 }
 main #education {
   background-color: #DC5662;
+  height: 100vh;
+}
+main #education div {
+  margin: 1rem 10px;
+  padding: 0 10px;
+  border-radius: 10px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.27);
+}
+main #education div h3 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.26);
 }
 main #languages {
   background-color: #FF9341;
@@ -387,7 +404,13 @@ main #languages div img {
   display: block;
   width: 90%;
   height: auto;
-  padding: 1rem 0;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.27);
 }
 main #languages div, main #languages img {
   margin: 0 auto;
@@ -395,13 +418,38 @@ main #languages div, main #languages img {
 main #projects {
   background-color: #F4CB6A;
 }
+main #projects div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+main #projects div div {
+  margin: 1rem 10px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.27);
+}
 main #projects div div img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+main #projects div div a {
+  background-color: red;
+  padding: 1rem 3rem;
+  margin: 2rem 0;
+  border-radius: 8px;
 }
 main #contact {
   background-color: #C7E197;
+  height: 100vh;
   margin: 0 auto;
 }
 main #contact form {
