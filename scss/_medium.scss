@@ -16,3 +16,68 @@ nav {
         }
     }
 }
+
+main {
+
+    .page-sections {
+
+        h2 {
+            font-size: 32px;
+            margin: 2rem;
+        }
+    }
+
+    #about {
+
+        h1 {
+            font-size: 64px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+    #education {
+        height: 100vh;
+
+        img {
+            width: calc(100% - (2 * 2rem));
+            margin: 0 2rem 2rem 2rem;
+        }
+        
+        div {
+
+            div {
+                margin: 1rem 2rem;
+            }
+        }
+    }
+
+    #languages {
+
+        height: 100vh;
+        
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+        }
+    }
+
+    #contact {
+
+        form {
+
+            input[type=text],
+            input[type=email],
+            select {
+                width: 500px;
+            }
+
+            textarea {
+                width: 500px;
+            }
+            
+        }
+    }
+}
