@@ -534,14 +534,12 @@ main #contact form button {
   background-color: #FF79BE;
   padding: 1rem 3rem;
   border-radius: 8px;
+  text-decoration: none;
+  color: black;
 }
 main #contact form button:hover {
   background-color: #FF55B2;
   cursor: pointer;
-}
-main #contact form button a {
-  text-decoration: none;
-  color: black;
 }
 
 /* --------------------------- FOOTER --------------------------- */
@@ -650,6 +648,9 @@ footer {
   main #languages div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  main #projects {
+    height: 100vh;
   }
   main #projects div {
     display: grid;

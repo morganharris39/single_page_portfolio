@@ -281,19 +281,14 @@ main {
                 background-color: $buttonColor;
                 padding: 1rem 3rem;
                 border-radius: 8px;
+                text-decoration: none;
+                color: black;
 
                 &:hover {
                     background-color: $buttonHover;
                     cursor: pointer;
                 }
-                
-                a {
-                    text-decoration: none;
-                    color: black;
-
-                }
-            }
-            
+            }   
         }
     }
 }
