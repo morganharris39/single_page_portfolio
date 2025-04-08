@@ -83,7 +83,6 @@ main {
     #about {
         background-color: $aboutBackground;
         height: 100vh;
-        color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -204,11 +203,16 @@ main {
                 }
 
                 a {
-                    background-color: red;
+                    background-color: $buttonColor;
                     padding: 1rem 3rem;
                     margin: 2rem 0;
                     border-radius: 8px;
                     text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        background-color: $buttonHover;
+                    }
                 }
             }
         }
@@ -262,12 +266,19 @@ main {
 
             button {
                 border: none;
-                background-color: red;
+                background-color: $buttonColor;
                 padding: 1rem 3rem;
                 border-radius: 8px;
+
+                &:hover {
+                    background-color: $buttonHover;
+                    cursor: pointer;
+                }
                 
                 a {
                     text-decoration: none;
+                    color: black;
+
                 }
             }
             
@@ -277,7 +288,7 @@ main {
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-    background-color: grey;
+    background-color: $menuColor;
 } // end footer wrapper
 
 footer {
@@ -285,4 +296,5 @@ footer {
     padding: 1rem $gutter;
     text-align: center;
     line-height: $leading;
+    color: white;
 }// end footer

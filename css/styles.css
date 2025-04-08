@@ -367,9 +367,8 @@ main .page-sections h2 {
   text-align: center;
 }
 main #about {
-  background-color: #B73B84;
+  background-color: #9999AE;
   height: 100vh;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -384,7 +383,7 @@ main #about p {
   font-size: 20px;
 }
 main #education {
-  background-color: #DC5662;
+  background-color: #BA91B9;
 }
 main #education img {
   display: block;
@@ -417,7 +416,7 @@ main #education div div p {
   padding: 0 10px;
 }
 main #languages {
-  background-color: #FF9341;
+  background-color: #C682AD;
 }
 main #languages div img {
   display: block;
@@ -438,7 +437,7 @@ main #languages div, main #languages img {
   margin: 0 auto;
 }
 main #projects {
-  background-color: #F4CB6A;
+  background-color: #FF8ACA;
 }
 main #projects div {
   display: flex;
@@ -467,14 +466,18 @@ main #projects div div img {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 main #projects div div a {
-  background-color: red;
+  background-color: #FF79BE;
   padding: 1rem 3rem;
   margin: 2rem 0;
   border-radius: 8px;
   text-decoration: none;
+  color: black;
+}
+main #projects div div a:hover {
+  background-color: #FF55B2;
 }
 main #contact {
-  background-color: #C7E197;
+  background-color: #FFA3D2;
   height: 100vh;
   margin: 0 auto;
 }
@@ -516,17 +519,22 @@ main #contact form textarea {
 }
 main #contact form button {
   border: none;
-  background-color: red;
+  background-color: #FF79BE;
   padding: 1rem 3rem;
   border-radius: 8px;
 }
+main #contact form button:hover {
+  background-color: #FF55B2;
+  cursor: pointer;
+}
 main #contact form button a {
   text-decoration: none;
+  color: black;
 }
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: grey;
+  background-color: #161516;
 }
 
 footer {
@@ -534,6 +542,7 @@ footer {
   padding: 1rem 10px;
   text-align: center;
   line-height: 150%;
+  color: white;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -554,18 +563,12 @@ footer {
   main #about p {
     font-size: 24px;
   }
-  main #education {
-    height: 100vh;
-  }
   main #education img {
     width: calc(100% - 4rem);
     margin: 0 2rem 2rem 2rem;
   }
   main #education div div {
     margin: 1rem 2rem;
-  }
-  main #languages {
-    height: 100vh;
   }
   main #languages div {
     display: grid;
@@ -578,6 +581,12 @@ footer {
   }
   main #contact form textarea {
     width: 500px;
+  }
+  main #education, main #languages, main #contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 64rem) {
@@ -603,8 +612,8 @@ footer {
     text-align: right;
   }
   main .page-sections h2 {
-    font-size: 32px;
-    margin: 2rem;
+    font-size: 36px;
+    margin: 2rem 2rem 3rem 2rem;
   }
   main #about h1 {
     font-size: 64px;
@@ -626,21 +635,9 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  main #languages {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   main #languages div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  main #projects {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   main #projects div {
     display: grid;

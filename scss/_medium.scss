@@ -39,7 +39,6 @@ main {
     }
 
     #education {
-        height: 100vh;
 
         img {
             width: calc(100% - (2 * 2rem));
@@ -55,8 +54,6 @@ main {
     }
 
     #languages {
-
-        height: 100vh;
         
         div{
             display: grid;
@@ -79,5 +76,12 @@ main {
             }
             
         }
+    }
+
+    #education, #languages, #contact {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

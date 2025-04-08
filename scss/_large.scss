@@ -29,8 +29,8 @@ main {
     .page-sections {
 
         h2 {
-            font-size: 32px;
-            margin: 2rem;
+            font-size: 36px;
+            margin: 2rem 2rem 3rem 2rem;
         }
     }
 
@@ -63,10 +63,6 @@ main {
     }
 
     #languages {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         
         div{
             display: grid;
@@ -75,10 +71,6 @@ main {
     }
 
     #projects {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
         div {
             display: grid;
